@@ -40,3 +40,5 @@ db.once('open', () => {
 })
 
 app.use('/', require('./routes'))
+
+module.exports.handler = serverless(app);
